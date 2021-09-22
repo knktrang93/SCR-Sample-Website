@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
       :root {
         --primary-color: #6c63ff;
         --secondary-color: #f5f2fe;
@@ -33,42 +37,76 @@
       }
       #content {
         display: flex;
+        margin-top: 30px;
+      }
+      .column {
+        text-align: center;
+        margin: 10px;
+        background: var(--secondary-color);
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 380px;
+      }
+      p {
+        padding: 0px 10px;
+      }
+      h3 {
+        display: block;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 34px;
+        margin-bottom: 0;
+      }
+      #mail {
+        display: flex;
+        justify-content: center;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 28px;
+      }
+      #mail:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <a href="index.html" id="homepage">Back to homepage</a>
-    <h1>About me</h1>
-    <h2>Front-end developer from San Francisco, California</h2>
-    <div id="content">
-      <div class="column">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          asperiores aspernatur tempora, accusantium modi, incidunt repellendus
-          nihil quia omnis pariatur error id necessitatibus delectus mollitia
-          iste itaque iusto sed eveniet.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          asperiores aspernatur tempora, accusantium modi, incidunt repellendus
-          nihil quia omnis pariatur error id necessitatibus delectus mollitia
-          iste itaque iusto sed eveniet.
-        </p>
+    <div>
+      <a href="index.html" id="homepage">Back to homepage</a>
+      <h1>About me</h1>
+      <h2>Front-end developer from San Francisco, California</h2>
+      <div id="content">
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            asperiores aspernatur tempora, accusantium modi, incidunt
+            repellendus nihil quia omnis pariatur error id necessitatibus
+            delectus mollitia iste itaque iusto sed eveniet.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            asperiores aspernatur tempora, accusantium modi, incidunt
+            repellendus nihil quia omnis pariatur error id necessitatibus
+            delectus mollitia iste itaque iusto sed eveniet.
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            asperiores aspernatur tempora, accusantium modi, incidunt
+            repellendus nihil quia omnis pariatur error id necessitatibus
+            delectus mollitia iste itaque iusto sed eveniet.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            asperiores aspernatur tempora, accusantium modi, incidunt
+            repellendus nihil quia omnis pariatur error id necessitatibus
+            delectus mollitia iste itaque iusto sed eveniet.
+          </p>
+        </div>
       </div>
-      <div class="column">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          asperiores aspernatur tempora, accusantium modi, incidunt repellendus
-          nihil quia omnis pariatur error id necessitatibus delectus mollitia
-          iste itaque iusto sed eveniet.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          asperiores aspernatur tempora, accusantium modi, incidunt repellendus
-          nihil quia omnis pariatur error id necessitatibus delectus mollitia
-          iste itaque iusto sed eveniet.
-        </p>
-      </div>
+      <h3 id="email">📮 Contact me</h3>
+      <a id="mail" href="Mailto:knktrang93@gmail.com">knktrang93@gmail.com</a>
     </div>
-    <h3 id="email">Contact Me</h3>
-    <a>knktrang93@gmail.com</a>
   </body>
 </html>
